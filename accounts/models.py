@@ -93,7 +93,6 @@ class User(AbstractBaseUser):
         max_length=10,
         choices=GENDER_CHOICES
     )
-
     email = models.EmailField(
         verbose_name=_('Email Address'),
         max_length=255,
