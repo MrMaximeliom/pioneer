@@ -93,22 +93,7 @@ class User(AbstractBaseUser):
         max_length=10,
         choices=GENDER_CHOICES
     )
-    # city = models.CharField(
-    #     verbose_name=_('City'),
-    #     blank=False,
-    #     null=False,
-    #     choices=CITIES_CHOICES,
-    #     max_length=350,
-    #     default=1
-    # )
-    # area = models.CharField(
-    #     verbose_name=_("Area"),
-    #     blank=False,
-    #     null=False,
-    #     choices=AREA_CHOICES,
-    #     max_length=300,
-    #     default=1
-    # )
+
 
     email = models.EmailField(
         verbose_name=_('Email Address'),
