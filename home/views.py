@@ -1,0 +1,22 @@
+from django.shortcuts import render
+from django.utils.translation import gettext_lazy as _
+from django.contrib.auth.decorators import login_required
+# Create your views here.
+def home(request):
+
+    context = {
+        'title':  _('Home'),
+        'home' : 'active',
+
+    }
+
+    return render(request, 'home/index.html', context)
+def about(request):
+
+    context = {
+        'title':  _('About'),
+        'about' : 'active',
+
+    }
+
+    return render(request, 'home/about.html', context)

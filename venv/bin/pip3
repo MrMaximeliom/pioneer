@@ -1,4 +1,4 @@
-#!/home/moayed/Documents/PycharmProjects/Pioneer/venv/bin/python
+#!/home/moayed/PycharmProjects/Pioneer/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
