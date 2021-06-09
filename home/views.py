@@ -20,3 +20,12 @@ def about(request):
     }
 
     return render(request, 'home/about.html', context)
+def contactUs(request):
+
+    context = {
+        'title':  _('Contact Us'),
+        'contact' : 'active',
+
+    }
+
+    return render(request, 'home/contact_us.html', context)
