@@ -22,6 +22,10 @@
 
      <!-- custom css code -->
     <link rel="shortcut icon" href="{% static 'home/img/favicon.png' %}">
+    <script
+			  src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+			  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+			  crossorigin="anonymous"></script>
 <!--    <link rel="stylesheet" type="text/css" href="{% static 'home/css/base.css' %}">-->
 {% block custom_css %}{% endblock %}
        <title>{% block title %}{{title}}{% endblock %}</title>
@@ -79,13 +83,13 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="https://apps.fedoraproject.org/nuancier/pictures/f30/gnokii-clyde-he-1238580-unsplash.jpg" class="d-block w-100" alt="...">
+      <img loading="lazy" src="{% static 'home/img/slide1.png'%}" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="https://apps.fedoraproject.org/nuancier/pictures/f30/gnokii-everaldo-coelho-486015-unsplash.jpg" class="d-block w-100" alt="...">
+      <img loading="lazy" src="{% static 'home/img/slide2.jpg'%}" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="https://apps.fedoraproject.org/nuancier/pictures/f30/alexh83-_ALX1588.png" class="d-block w-100" alt="...">
+      <img loading="lazy" src="{% static 'home/img/slide3.jpg'%}" class="d-block w-100" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -98,6 +102,8 @@
   </button>
 </div>
 {% block content %}
+{% endblock %}
+{% block custom_javascript %}
 {% endblock %}
 </body>
 </html>
