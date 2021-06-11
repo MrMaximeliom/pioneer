@@ -29,3 +29,12 @@ def contactUs(request):
     }
 
     return render(request, 'home/contact_us.html', context)
+def termsAndConditions(request):
+
+    context = {
+        'title':  _('Terms and Conditions'),
+        'terms' : 'active',
+
+    }
+
+    return render(request, 'home/terms_and_conditions.html', context)

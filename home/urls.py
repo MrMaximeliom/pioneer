@@ -8,5 +8,6 @@ urlpatterns = [
     path('home/', views.home, name='home-page'),
     path('about/', views.about, name='about-page'),
     path('contactUs/', views.contactUs, name='contactUs-page'),
+    path('termsAndConditions/', views.termsAndConditions, name='terms-page'),
 
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
