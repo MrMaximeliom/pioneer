@@ -38,3 +38,12 @@ def termsAndConditions(request):
     }
 
     return render(request, 'home/terms_and_conditions.html', context)
+def test(request):
+
+    context = {
+        'title':  _('Test'),
+        'test' : 'active',
+
+    }
+
+    return render(request, 'home/test.html', context)

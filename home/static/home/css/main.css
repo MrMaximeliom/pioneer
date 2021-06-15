@@ -1,0 +1,12 @@
+.main-elements{
+margin:2rem;
+}
+  html{
+font-family: 'Poppins', sans-serif;
+  height:100%;
+}
+body {
+  background: #fafafa;
+  color: #333333;
+  height:100%;
+  }
