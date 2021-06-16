@@ -1,3 +1,6 @@
-.accordion-collapse.collapse.show ,.accordion-collapse.collapsing ,.accordion-button.collapsed {
+.accordion-collapse.collapse.show ,.accordion-collapse.collapsing {
+width:50vw;
+}
+#accordionExample{
 width:50vw;
 }
