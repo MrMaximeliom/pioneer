@@ -1,4 +1,4 @@
-body {
+/*body {
   min-height: 100vh;
   min-height: -webkit-fill-available;
 }
@@ -6,7 +6,8 @@ body {
 html {
   height: -webkit-fill-available;
 }
-
+*/
+/*
 main {
   display: flex;
   flex-wrap: nowrap;
@@ -94,4 +95,44 @@ display:flex;
 .sidebar{
 width: 280px;
 height: 100vh;
+}
+*/
+#sidebar-btn{
+background-color: #04acb4;
+
+
+}
+
+#sidebar {
+background-color: #3c444c;
+	display: inline-block;
+	vertical-align: top;
+	height: 100%;
+	width: 18%;
+	overflow: auto;
+}
+
+#content {
+	background-color: #f8f8f8;
+	display: inline-block;
+	vertical-align: top;
+	height: 100%;
+	width: 82%;
+	overflow: auto;
+}
+@media (max-width: 992px)
+ {
+  #sidebar-btn{
+  display:block;
+  }
+  #sidebar{
+  display:none;
+  }
+  #content{
+  width:100%;
+  }
+ /*
+  .sidebar-class{
+  display:none;
+  }*/
 }

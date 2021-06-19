@@ -15,6 +15,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/dced961655.js" crossorigin="anonymous"></script>
+
    <!-- Google  Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
@@ -27,10 +28,10 @@
 			  src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
 			  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
 			  crossorigin="anonymous"></script>
-<!--    <link rel="stylesheet" type="text/css" href="{% static 'home/css/base.css' %}">-->
-<!--        <link rel="stylesheet" type="text/css" href="{% static 'home/css/sidebars.css' %}">-->
+
+    <script src="{% static 'home/js/main.js' %}"></script>
         <link rel="stylesheet" type="text/css" href="{% static 'home/css/main.css' %}">
-        <link rel="stylesheet" type="text/css" href="{% static 'home/css/test.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'home/css/sidebar.css' %}">
 
 
 
@@ -41,8 +42,9 @@
 </head>
 <body>
 <div id="container">
-	<div id="sidebar">
-		<div id="sidebar-content">
+	<div id="sidebar" class="sidebar-class">
+
+		<div  class="collapse show" id="collapseExample">
 			    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
       <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
       <span class="fs-4">Sidebar</span>
@@ -100,6 +102,9 @@
 		<div id="main-content" >
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
+      <button id="sidebar-btn" class="btn navbar-light " type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          <span class="navbar-toggler-icon"></span>
+        </button>
     <a class="navbar-brand" href="#">
           <img src="{% static 'home/img/logo.png' %}" alt="" width="30" height="24" class="d-inline-block align-text-top">
       Pioneer
@@ -173,7 +178,7 @@
 
       </div>
     </div>
-    <span class="text-muted copyrights">Created With <i class="fas fa-heart"></i></span>
+    <span class="copyrights">Created With <i class="fas fa-heart"></i> By &nbsp; <a href="#" class="author">Moayed</a></span>
 
 
 </footer>

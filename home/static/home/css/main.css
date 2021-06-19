@@ -6,10 +6,15 @@ font-family: 'Poppins', sans-serif;
   height:100%;
 }
 body {
-  background: #fafafa;
-  color: #333333;
-  height:100%;
-  }
+	margin: 0;
+	height: 100%;
+}
+
+#container {
+	height: 100%;
+}
+
+
 
 .social-media-icons{
 display: flex;
@@ -61,4 +66,444 @@ border-radius: 50%;
 .copyrights{
 display: flex;
 justify-content: center;
+}
+.fa-heart{
+color:red;
+margin-left:.5rem;
+margin-right:.5rem;
+}
+.author{
+text-decoration:none;
+color:black;
+
+}
+@media (min-width: 992px)
+and (orientation: landscape)
+ {
+  #sidebar-btn{
+  display:none;
+  }
+ /* #sidebar{
+  display:none;
+  }
+  #content{
+  width:100%;
+  }*/
+}
+/* media queries for laptops */
+/* ----------- Non-Retina Screens ----------- */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+  #sidebar{
+  display:inline-block;
+    }
+
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) {
+  #sidebar{
+  display:inline-block;
+    }
+
+}
+/* media queries for iphones */
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+.card-flex{
+display:flex;
+justify-content: center;
+margin-top:2rem;
+flex-direction:row;
+}
+.row {
+ /* one columns to start */
+  @include row-cols(1);
+  }
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+  .card-flex{
+display:flex;
+justify-content: center;
+margin-top:2rem;
+flex-direction:row;
+}
+.social-media-icons{
+display: flex;
+flex-direction: row;
+align-content: center;
+justify-content: center;
+align-items:center;
+
+}
+.row {
+ /* one columns to start */
+  @include row-cols(1);
+  }
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+  .card-flex{
+display:flex;
+justify-content: center;
+margin-top:2rem;
+flex-direction:row;
+}
+.row {
+ /* one columns to start */
+  @include row-cols(1);
+  }
+  .social-media-icons{
+display: flex;
+flex-direction: row;
+align-content: center;
+justify-content: center;
+align-items:center;
+
+}
+
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .card-flex{
+display:flex;
+justify-content: center;
+margin-top:2rem;
+flex-direction:row;
+}
+.row {
+ /* one columns to start */
+  @include row-cols(1);
+  }
+  .social-media-icons{
+display: flex;
+flex-direction: row;
+align-content: center;
+justify-content: center;
+align-items:center;
+
+}
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+  .card-flex{
+display:flex;
+justify-content: center;
+margin-top:2rem;
+flex-direction:row;
+}
+.row {
+ /* one columns to start */
+  @include row-cols(1);
+  }
+  .social-media-icons{
+display: flex;
+flex-direction: row;
+align-content: center;
+justify-content: center;
+align-items:center;
+
+}
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+  .card-flex{
+display:flex;
+justify-content: center;
+margin-top:2rem;
+flex-direction:row;
+}
+.row {
+ /* one columns to start */
+  @include row-cols(1);
+  }
+  .social-media-icons{
+display: flex;
+flex-direction: row;
+align-content: center;
+justify-content: center;
+align-items:center;
+
+}
+
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .card-flex{
+display:flex;
+justify-content: center;
+margin-top:2rem;
+flex-direction:row;
+}
+.row {
+ /* one columns to start */
+  @include row-cols(1);
+  }
+  .social-media-icons{
+display: flex;
+flex-direction: row;
+align-content: center;
+justify-content: center;
+align-items:center;
+
+}
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+  .card-flex{
+display:flex;
+justify-content: center;
+margin-top:2rem;
+flex-direction:row;
+}
+.row {
+ /* one columns to start */
+  @include row-cols(1);
+  }
+  .social-media-icons{
+display: flex;
+flex-direction: row;
+align-content: center;
+justify-content: center;
+align-items:center;
+
+}
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+  .card-flex{
+display:flex;
+justify-content: center;
+margin-top:2rem;
+flex-direction:row;
+}
+.row {
+ /* one columns to start */
+  @include row-cols(1);
+  }
+  .social-media-icons{
+display: flex;
+flex-direction: row;
+align-content: center;
+justify-content: center;
+align-items:center;
+
+}
+
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+  .card-flex{
+display:flex;
+justify-content: center;
+margin-top:2rem;
+flex-direction:row;
+}
+.row {
+ /* one columns to start */
+  @include row-cols(1);
+  }
+  .social-media-icons{
+display: flex;
+flex-direction: row;
+align-content: center;
+justify-content: center;
+align-items:center;
+
+}
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+  .card-flex{
+display:flex;
+justify-content: center;
+margin-top:2rem;
+flex-direction:row;
+}
+.row {
+ /* one columns to start */
+  @include row-cols(1);
+  }
+  .social-media-icons{
+display: flex;
+flex-direction: row;
+align-content: center;
+justify-content: center;
+align-items:center;
+
+}
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+  .card-flex{
+display:flex;
+justify-content: center;
+margin-top:2rem;
+flex-direction:row;
+}
+.row {
+ /* one columns to start */
+  @include row-cols(1);
+  }
+  .social-media-icons{
+display: flex;
+flex-direction: row;
+align-content: center;
+justify-content: center;
+align-items:center;
+
+}
+
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+  .card-flex{
+display:flex;
+justify-content: center;
+margin-top:2rem;
+flex-direction:row;
+}
+.row {
+ /* one columns to start */
+  @include row-cols(1);
+  }
+  .social-media-icons{
+display: flex;
+flex-direction: row;
+align-content: center;
+justify-content: center;
+align-items:center;
+
+}
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+  .row {
+ /* one columns to start */
+  @include row-cols(1);
+  }
+  .social-media-icons{
+display: flex;
+flex-direction: row;
+align-content: center;
+justify-content: center;
+align-items:center;
+
+}
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+  .card-flex{
+display:flex;
+justify-content: center;
+margin-top:2rem;
+flex-direction:row;
+}
+.row {
+ /* one columns to start */
+  @include row-cols(1);
+  }
+  .social-media-icons{
+display: flex;
+flex-direction: row;
+align-content: center;
+justify-content: center;
+align-items:center;
+
+}
+
 }
