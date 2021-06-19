@@ -11,8 +11,6 @@ sidebar.css('display','block');
 sidebar.css('width','18%');
 content.css('width','82%');
 console.log('second');
-
-
 }
 else if(sidebarDiv.hasClass('show') && sidebar.display != 'none'){
 sidebarDiv.removeClass('show');
