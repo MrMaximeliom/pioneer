@@ -4,8 +4,6 @@ var sidebarDiv = $('#collapseExample');
 var sidebar = $('#sidebar');
 var content = $('#content');
 var currentWidth = $(window).width();
-
-
 button.on('click',function(){
 if(sidebarDiv.hasClass('show') && sidebar.display == 'none'){
 //sidebarDiv.removeClass('show');
